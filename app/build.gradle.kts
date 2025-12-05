@@ -73,9 +73,12 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:1.3.4")
     implementation("androidx.camera:camera-view:1.3.4")
 
+    // TFLite runtime
+    implementation("org.tensorflow:tensorflow-lite:2.13.0") // or latest stable
+    implementation("org.tensorflow:tensorflow-lite-support:0.4.3") // for FileUtil, etc.
     // Edge LiteRT (YOLOv8 TFLite runtime)
-    implementation("com.google.ai.edge.litert:litert-api:1.4.1")
-    implementation("com.google.ai.edge.litert:litert-support-api:1.4.1")
+  //  implementation("com.google.ai.edge.litert:litert-api:1.4.1")
+    //implementation("com.google.ai.edge.litert:litert-support-api:1.4.1")
 
     // MediaPipe Pose Landmarker
     implementation("com.google.mediapipe:tasks-vision:0.10.18")
